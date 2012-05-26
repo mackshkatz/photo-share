@@ -1,0 +1,36 @@
+#container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.main-nav {
+	overflow: hidden;
+}
+
+.main-nav ul {
+	float: right;
+}
+
+.main-nav ul li {
+	float: left;
+	list-style-type: none;
+}
+
+.main-nav a {
+	display: block;
+	padding: 10px;
+	margin-left: 5px;
+	text-decoration: none;
+}
+
+.gallery {
+	width: 250px;
+	height: 250px;
+	float: left;
+	background: #999;
+	margin: 40px;
+}
+
+.new-gallery {
+	float: right;
+}

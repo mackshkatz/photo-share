@@ -27,4 +27,7 @@ PhotoShare::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Raise an exception if I try to mass assign something that isn't mass-assignable (Seems to only work in Rails 3.2)
+  # config.active_record.mass_assignment_sanitizer = :strict
 end

@@ -1,0 +1,14 @@
+<% if current_user %>
+	<%= link_to "New Gallery", new_gallery_path, :class => "new-gallery" %>
+	<h1>Your Galleries</h1>
+<% end %>
+
+<% if @galleries.empty? %>
+	<p>You haven't created any galleries yet</p>
+<% else %>
+	<% @galleries.each do |gallery| %>
+		<section class="gallery">
+			<%= link_to gallery.title, gallery %>
+		</section>
+	<% end %>
+<% end %>

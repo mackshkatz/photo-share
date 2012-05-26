@@ -7,8 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div id="container">
+		<%= render 'shared/navigation' %>
+		<%= flash[:notice] if flash[:notice] %>
+		<%= flash[:alert] if flash[:alert] %>
+		<%= yield %>
+	</div>
 </body>
 </html>

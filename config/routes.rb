@@ -1,4 +1,8 @@
 PhotoShare::Application.routes.draw do
+  root :to => 'galleries#index'
+  resources :users
+  resource :sessions
+  resources :galleries
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
