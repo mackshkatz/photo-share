@@ -34,3 +34,11 @@
 .new-gallery {
 	float: right;
 }
+
+.photo {
+	width: 250px;
+	height: 250px;
+	float: left;
+	background: #999;
+	margin: 40px;
+}

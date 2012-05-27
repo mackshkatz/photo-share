@@ -1,0 +1,10 @@
+<% if current_user %>
+	<%= link_to "New Photo", new_gallery_photo_path, :class => "new-photo" %>
+	<h1>Photos</h1>
+<% end %>
+
+<% @photos.each do |photo| %>
+	<section class="photo">
+		<%= photo.title %>
+	</section>
+<% end %>

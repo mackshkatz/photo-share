@@ -8,7 +8,7 @@
 <% else %>
 	<% @galleries.each do |gallery| %>
 		<section class="gallery">
-			<%= link_to gallery.title, gallery %>
+			<%= link_to gallery.title, gallery_photos_path(gallery) %>
 		</section>
 	<% end %>
 <% end %>
